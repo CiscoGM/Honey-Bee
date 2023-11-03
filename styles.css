@@ -3,8 +3,34 @@ height: 950px;
 width: auto;
 display:  flex;
 justify-content: center;
-background-color: orange;
+background-color: black;
+text-align: center;
 }
+#slogan img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+       
+     }
+     #slogan h2{
+        display: block;
+        white-space: nowrap;
+       
+        border-right: 4px solid;
+        width: 30ch;
+        animation: typing 2s steps(30),
+        blink .5s infinite step-end alternate;
+        overflow: hidden;
+     }
+
+
+     @keyframes typing{
+        from{width: 0;}
+     }
+     @keyframes blink{
+       50%{border-color:transparent ;}
+     }
 
 #beneficios{
     display:  flex;
@@ -46,8 +72,12 @@ background-color: orange;
     margin: 1%; 
     height: 400px;
     padding: 1%;
+    transition: transform 0.3s ease;
 }
-
+#ofertas img:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
 
 
 
@@ -73,7 +103,7 @@ section {
     transition: 0.5s ease;
   }
   section img:hover {
-    cursor: crosshair;
+    cursor: pointer;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
