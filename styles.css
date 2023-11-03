@@ -1,0 +1,108 @@
+#slogan{
+height: 950px;
+width: auto;
+display:  flex;
+justify-content: center;
+background-color: orange;
+}
+
+#beneficios{
+    display:  flex;
+    background-color:#ECE4B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 1%;
+    margin: 10px;
+    }
+#beneficios dd{
+    height: 300px;
+   width: 200px;
+}
+.texto-superpuesto1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold;
+}
+
+#container h1{
+    text-align: center;
+}
+#ofertas {
+    text-align: center;
+    background-color: orange;
+    padding: 2%; 
+    margin: 10px;
+    
+}
+#ofertas img {
+    background-color: white; 
+    display: inline-block; 
+    margin: 1%; 
+    height: 400px;
+    padding: 1%;
+}
+
+
+
+
+#galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    background-color:#ECE4B7;
+}
+section {
+  width: 600px;
+  height: 430px;
+  display: flex;
+  background-color:#ECE4B7;
+}
+
+  section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  
+
+
+
+
+#funciones {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: left;
+    background-color: orange;
+    padding: 1%;
+    margin: 10px;
+}
+
+#funciones img { 
+    align-self: flex-start; 
+    margin-right: 20px; /
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido h3, .contenido ul {
+    margin: 0; 
+}
