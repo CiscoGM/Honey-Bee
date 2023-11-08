@@ -2,7 +2,7 @@ var textDisplay=document.getElementById("lista1")
 
 
 var elementosTelefono=['monitoreo de temperatura','monitoreo de humedad', 
-              'sensores de sonido que avisan al usuario cuando inicia la actividad de las abejas',
+              'notificacion sobre la actividad de las abejas',
             'peso de la colmena','agregar colmenas mediante uso de qr']
 
 //funcion para simular el efecto de maquina de escribir 
@@ -26,5 +26,20 @@ function mostrarElementos(index){
     }, 1000);
     }
 }
+function startAnimation(entries, observer) {
+    if (entries[0].isIntersecting) {
+      mostrarElementos(0);
+      observer.unobserve(textDisplay);
+    }
+  }
+  
+  var observer = new IntersectionObserver(startAnimation);
+  observer.observe(textDisplay);
 
-mostrarElementos(0)
+  setInterval(function(){
+    var lista=textDisplay.querySelectorAll('li')
+    lista.forEach(item=>{
+        textDisplay.removeChild(item)
+    })
+    observer.observe(textDisplay)
+  },5000)
