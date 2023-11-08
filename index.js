@@ -5,7 +5,7 @@ var elementosTelefono=['monitoreo de temperatura','monitoreo de humedad',
               'notificacion sobre la actividad de las abejas',
             'peso de la colmena','agregar colmenas mediante uso de qr']
 
-//funcion para simular el efecto de maquina de escribir 
+//funcion para que se vaya agregando uno por uno
 function mostrarElementos(index){
     if (index < elementosTelefono.length) {
         var nuevoElemento = document.createElement("li");
@@ -15,15 +15,8 @@ function mostrarElementos(index){
         //mostraremos los elementos uno por uno con delay 
         setTimeout(function() {
             mostrarElementos(index + 1);
-        }, 500);
+        }, 700);
   
-    }else{
-       // mostraremos todos los elementos una vez acabado
-       setTimeout(function() {
-        var todosLosElementos = document.createElement("li");
-        todosLosElementos.textContent = elementos.join(', ');
-        textDisplay.appendChild(todosLosElementos);
-    }, 1000);
     }
 }
 function startAnimation(entries, observer) {
@@ -42,4 +35,4 @@ function startAnimation(entries, observer) {
         textDisplay.removeChild(item)
     })
     observer.observe(textDisplay)
-  },5000)
+  },6000)
