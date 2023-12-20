@@ -1,7 +1,7 @@
-var textDisplay=document.getElementById("lista1")
+let textDisplay=document.getElementById("lista1")
 
 
-var elementosTelefono=['monitoreo de temperatura','monitoreo de humedad', 
+let elementosTelefono=['monitoreo de temperatura','monitoreo de humedad', 
               'notificacion sobre la actividad de las abejas',
             'peso de la colmena','agregar colmenas mediante uso de qr']
 
@@ -36,3 +36,7 @@ function startAnimation(entries, observer) {
     })
     observer.observe(textDisplay)
   },6000)
+
+
+
+
