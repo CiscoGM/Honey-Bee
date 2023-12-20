@@ -3,70 +3,96 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
-}
-a{
   text-decoration: none;
+  text-align: center;
+}
+body{
+  position: relative;
+  height: 100vh;
+}
+nav{
+  background-color: #f1c40f3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 50px;
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
+  color: white;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 li{
-  list-style: none;
+  width: 70px;
 }
-.navbar{
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 12px 80px;
-background-color: #ECE4B7;
-color: rgb(12, 12, 12);
+li a{
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 20px 15px;
+  transition: 0.5s;
+  color: black;
 }
-.nav-links a{
-  color: rgb(20, 20, 20);
+li a:hover{
+  color: #f1c40f3d;
+  border-bottom: 4px #f1c40f3d solid;
+  transition: 0.5s;
 }
-.menu{
-  display: flex;
-  gap: 32px;
-  font-size: 18px;
+.hide{
+  top: 70px;
 }
-.menu li{
-  padding: 8px 10px;
-}
-.menu li:hover{
-  background-color: #f1c40f3d;
-transition: all.3s ease;
-}
-
-input[type=checkbox]{
-  display: none;
-}
-.hamburger{
-  display: none;
-  font-size: 25px;
-  user-select: none;
-}
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: #ECE4B7;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-  }
-
-  .menu li:hover {
-    display: inline-block;
-    background-color: #f1c40f;
-    transition: 0.3s ease;
-  }
-
-
-  input[type=checkbox]:checked ~ .menu {
-    display: flex;
-   
-  }
+@media screen and (max-width:750px) {
   .hamburger{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     cursor: pointer;
+    padding: 10px;
+    margin-right: -10px;
+  }
+
+  .lines{
+    display: block;
+    background-color: black;
+    height: 2px;
+    width: 35px;
+  }
+  .lines-rotate{
+    background-color: rgba(160, 158, 158, 0.233);
+    border-radius: 5px;
+  }
+  nav{
+    position: relative;
+    padding: 15px 20px;
+  }
+  ul{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    background-color: #fffffef5;
+    padding: 35px 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.363);
+  }
+  li a{
+    color: rgb(0, 0, 0);
+  }
+  li{
+    text-align: center;
+    width: 90vw;
+  }
+  li a:hover{
+    font-weight: bold;
+    color: rgb(226, 217, 217);
+    border: none;
+    letter-spacing: 3px;
   }
 }
 
@@ -133,10 +159,45 @@ text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Color del texto */
-    font-size: 24px; /* Tamaño del texto */
+    color: white; 
+    font-size: 20px;
     font-weight: bold;
 }
+@media (max-width: 740px) {
+         @keyframes typing{
+            from{width: 0;}
+         }
+         @keyframes blink{
+           50%{border-color:transparent ;}
+         }
+         #slogan p{
+          width: 400px;
+         }
+    .texto-superpuesto1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+        font-size: 14px; 
+        font-weight: bold;
+    }
+
+    #beneficios{
+      display:  flex;
+      background-color:#ECE4B7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      padding: 1%;
+      font-size: 12px;
+      margin: 10px;
+      }
+   
+
+}
+
 
 #container h1{
     text-align: center;
