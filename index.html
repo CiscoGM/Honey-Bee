@@ -9,21 +9,27 @@
 </head>
 <body>
     <nav class="nav-container">
-        <a href="index.html" class="links"> <img src="img/logo.png" alt="Honey Bee" class="logito"> </a>
+       
 
-        <div class="hamburger">
-            <span class="lines"></span>
-            <span class="lines"></span>
-            <span class="lines"></span>
-        </div>
-        
-        <ul id="nav-list">
-                <li> <a href="#slogan" class="links">Quienes somos</a></li>
-                <li> <a href="#beneficios" class="links"> Beneficios</a> </li>
-                <li> <a href="#ofertas" class="links"> Planes</a> </li>
-                <li> <a href="#galeria" class="links"> Clientes</a> </li>
-                <li> <a href="#funciones" class="links"> Funciones</a> </li>
+        <ul class="sidebar">
+                <li onclick=closeSidebar()> <link rel="stylesheet" href=""> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li> <a href="#slogan" >Quienes somos</a></li>
+                <li> <a href="#beneficios" > Beneficios</a> </li>
+                <li> <a href="#ofertas" > Planes</a> </li>
+                <li> <a href="#galeria" > Clientes</a> </li>
+                <li> <a href="#funciones" > Funciones</a> </li>
         </ul>
+
+        <ul>
+            <li> <a href="index.html" ><img src="img/logo.png" alt="Honey Bee" class="logito">  </a></li>
+             <li class="hideOnMobile"> <a href="#slogan" >Quienes somos</a></li>
+             <li class="hideOnMobile"> <a href="#beneficios" > Beneficios</a> </li>
+             <li class="hideOnMobile"> <a href="#ofertas" > Planes</a> </li>
+             <li class="hideOnMobile"> <a href="#galeria" > Clientes</a> </li>
+             <li class="hideOnMobile"> <a href="#funciones" > Funciones</a> </li>
+             <li class="menuBtn" onclick=showSidebar()> <a href="#" > <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+            
+     </ul>
     </nav>
     
             
