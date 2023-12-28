@@ -131,20 +131,34 @@ padding: 0 20px;
 
 
 
-#beneficios{
-    display:  flex;
-    background-color:#ECE4B7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    padding: 1%;
-    margin: 10px;
-    }
-#beneficios dd{
-    height: 300px;
-   width: 200px;
-}
+     #beneficios{
+      display:  flex;
+      background-color:#ECE4B7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      padding: 1%;
+      margin: 10px;
+      }
+  #beneficios dl{
+      height: 300px;
+     width: 200px;
+     display: flex;
+     flex-direction: column;
+     
+  }
+  #beneficios dt{
+    text-align:center;
+    margin: auto;
+    overflow: hidden;
+  }
+  #beneficios dd{
+    text-align:center;
+    margin: auto;
+    overflow: hidden;
+  }
+  
 .texto-superpuesto1{
     position: absolute;
     top: 50%;
@@ -157,42 +171,52 @@ padding: 0 20px;
     overflow: hidden;
     word-wrap: break-word;
 }
+
 @media (max-width: 740px) {
-         @keyframes typing{
-            from{width: 0;}
-         }
-         @keyframes blink{
-           50%{border-color:transparent ;}
-         }
-        
-         .texto-superpuesto1 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white;
-          font-size: 14px;
-          font-weight: bold;
-          max-width: 100%;
-          overflow: hidden;
-          word-wrap: break-word;
-      }
-
-    #beneficios{
-      display:  flex;
-      background-color:#ECE4B7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-      padding: 1%;
-      font-size: 12px;
-      margin: 10px;
-      }
-   
-
+  @keyframes typing{
+     from{width: 0;}
+  }
+  @keyframes blink{
+    50%{border-color:transparent ;}
+  }
+  #slogan p{
+   width: 400px;
+  }
+.texto-superpuesto1{
+ position: absolute;
+overflow: hidden;
+align-items: flex-end;
 }
 
+
+#beneficios{
+display:  flex;
+background-color:#ECE4B7;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
+}
+
+#beneficios dt{
+ text-align:center;
+ margin: auto;
+ overflow: hidden;
+ font-weight: bold;
+ padding: 1%;
+font-size: 12px;
+}
+#beneficios dd{
+ text-align:center;
+ margin: auto;
+ overflow: hidden;
+ font-weight: bold;
+padding: 1%;
+font-size: 12px;
+}
+
+
+}
 
 #container h1{
     text-align: center;
